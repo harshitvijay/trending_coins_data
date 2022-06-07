@@ -44,3 +44,15 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+### API used
+
+#### https://api.coingecko.com/api/v3/search/trending
+
+#### https://api.coingecko.com/api/v3/simple/price?ids=optimism,binancecoin,terra-luna,green-satoshi-token&&vs_currencies=usd
+
+#### https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=15
+
+#### https://api.coingecko.com/api/v3/simple/supported_vs_currencies
+
+#### https://api.coingecko.com/api/v3/coins/list
