@@ -1,0 +1,24 @@
+.sidenav {
+  background-color: #01070abf;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-logo-container {
+  margin: 5rem auto;
+  margin-bottom: 2rem;
+  color: antiquewhite;
+  font-weight: 900;
+  font-size: 3rem;
+  font-style: oblique;
+  font-family: "Times New Roman", serif;
+}
+.nav-button {
+  font-weight: 900;
+  font-style: oblique;
+  width: 13rem;
+  height: 3rem;
+  font-size: 1.5rem !important;
+}
