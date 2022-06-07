@@ -1,0 +1,14 @@
+.dash-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: aliceblue;
+  font-family: Times, serif;
+  font-size: 1rem;
+}
+.dash-title-heading {
+  margin-left: 2rem;
+}
+.dash-title-address {
+  margin-right: 2rem;
+}
