@@ -1,11 +1,11 @@
 .sidenav {
-  background-color: #01070abf;
+  background-color: rgba(174, 179, 182, 0.1);
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
+/* #01070abf */
 .nav-logo-container {
   margin: 5rem auto;
   margin-bottom: 2rem;
