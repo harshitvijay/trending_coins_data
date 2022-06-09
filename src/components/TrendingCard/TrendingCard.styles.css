@@ -1,0 +1,36 @@
+.card-container {
+  height: 100%;
+  width: 24%;
+  background-color: rgba(5, 5, 5, 0.9);
+  margin: 0 auto;
+  border-radius: 3px;
+  color: antiquewhite;
+  cursor: pointer;
+}
+.card-details {
+  display: flex;
+  flex-direction: column;
+}
+.coin-name {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
+.percentage-profit {
+  color: #18a8da;
+}
+.percentage-loss {
+  color: palevioletred;
+}
+.coin-price {
+  margin-left: 1.9rem;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+.card-graph {
+  /* background-color: #182b3a;
+  background-image: linear-gradient(315deg, #d4dbe0 0%, #aed7ee 74%); */
+  width: 100%;
+  height: 50%;
+}
