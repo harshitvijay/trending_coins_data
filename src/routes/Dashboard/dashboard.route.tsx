@@ -4,7 +4,7 @@ import "./dashboard.styles.css";
 
 const Dashboard = () => {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid dashboard">
       <div className="row">
         <Sidenav />
         <Content />
