@@ -1,0 +1,18 @@
+.content {
+  background-color: #282c34;
+}
+.dash-heading {
+  height: 10%;
+}
+.empty-box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.empty-box {
+  background-color: rgba(174, 179, 182, 0.1);
+  height: 90%;
+  width: 80%;
+  border-radius: 20px;
+  margin-right: -59px;
+}
