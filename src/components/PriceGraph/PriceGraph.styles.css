@@ -1,0 +1,9 @@
+.dash-graph {
+  height: 70%;
+}
+.price-in-usd {
+  color: antiquewhite;
+  font-weight: 900;
+  font-size: 2rem;
+  margin: 1rem 0 0 5rem;
+}
