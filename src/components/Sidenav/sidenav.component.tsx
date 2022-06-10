@@ -1,8 +1,9 @@
 import { Button } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import "./sidenav.styles.css";
 
 const Sidenav = () => {
+  const { address } = useParams();
   const navigate = useNavigate();
   return (
     <div className="col-2 sidenav">
@@ -10,7 +11,10 @@ const Sidenav = () => {
         <h1 className="logo-heading">Logo</h1>
       </div>
       <div className="nav-button-container">
-        <Button className="nav-button" onClick={() => navigate("/dashboard")}>
+        <Button
+          className="nav-button"
+          onClick={() => navigate(`/dashboard/${address}`)}
+        >
           Dashboard
         </Button>
       </div>
