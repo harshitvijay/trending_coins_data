@@ -71,11 +71,11 @@ const TrendingCardList = () => {
     <div className="dash-card-list">
       {trendingCoins &&
         trendingCoinsPrice &&
-        trendingCoins.map((coin: Coin) => {
+        trendingCoins.map((coin: Coin, index) => {
           const id: string = coin.item.id;
           return (
             <TrendingCard
-              key={id}
+              key={index}
               coin={coin.item}
               coinPrice={trendingCoinsPrice[id]}
             />

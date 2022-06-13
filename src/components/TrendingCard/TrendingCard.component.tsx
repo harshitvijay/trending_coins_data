@@ -121,7 +121,9 @@ const TrendingCard = ({ coin, coinPrice }: TrendingCardProps) => {
                       coinPrice.usd_24h_change > 0 ? "#18a8da" : "palevioletred"
                     }`,
                     backgroundColor: `${
-                      coinPrice.usd_24h_change > 0 ? "#18a8da" : "palevioletred"
+                      coinPrice.usd_24h_change > 0
+                        ? "rgba(24, 168, 218,0.1)"
+                        : "rgba(219, 112, 147,0.2)"
                     }`,
                     fill: true,
                     tension: 0.7,
@@ -132,9 +134,6 @@ const TrendingCard = ({ coin, coinPrice }: TrendingCardProps) => {
                 elements: {
                   point: {
                     radius: 1,
-                  },
-                  line: {
-                    fill: true,
                   },
                 },
                 scales: {

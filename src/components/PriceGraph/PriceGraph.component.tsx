@@ -61,7 +61,8 @@ const PriceGraph = () => {
                   label: "Price in USD",
                   fill: true,
                   borderColor: "#18a8da",
-                  backgroundColor: "#18a8da",
+                  backgroundColor: "rgba(24, 168, 218,0.1)",
+                  tension: 0.4,
                 },
               ],
             }}
