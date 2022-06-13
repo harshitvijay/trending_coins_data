@@ -13,6 +13,7 @@ import {
   Title,
   Tooltip,
   Legend,
+  Filler,
 } from "chart.js";
 import "./TrendingCard.styles.css";
 import { Line } from "react-chartjs-2";
@@ -24,7 +25,8 @@ ChartJS.register(
   LineElement,
   Title,
   Tooltip,
-  Legend
+  Legend,
+  Filler
 );
 
 interface CoinItem {
@@ -122,6 +124,7 @@ const TrendingCard = ({ coin, coinPrice }: TrendingCardProps) => {
                       coinPrice.usd_24h_change > 0 ? "#18a8da" : "palevioletred"
                     }`,
                     fill: true,
+                    tension: 0.7,
                   },
                 ],
               }}

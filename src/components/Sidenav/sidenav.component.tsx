@@ -17,6 +17,9 @@ const Sidenav = () => {
         >
           Dashboard
         </Button>
+        <Button className="nav-button" onClick={() => navigate("/")}>
+          Home
+        </Button>
       </div>
     </div>
   );

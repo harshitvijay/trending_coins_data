@@ -12,6 +12,7 @@ import {
   Title,
   Tooltip,
   Legend,
+  Filler,
 } from "chart.js";
 import "./PriceGraph.styles.css";
 
@@ -22,9 +23,9 @@ ChartJS.register(
   LineElement,
   Title,
   Tooltip,
-  Legend
+  Legend,
+  Filler
 );
-
 const PriceGraph = () => {
   const { inUSD, coinId } = CryptoState();
   const [historicalData7Day, setHistoricalData7Day] = useState([]);
@@ -57,25 +58,43 @@ const PriceGraph = () => {
               datasets: [
                 {
                   data: historicalData7Day.map((coin) => coin[1]),
-                  label: `Price (Past 7 Day) in USD`,
+                  label: "Price in USD",
+                  fill: true,
                   borderColor: "#18a8da",
                   backgroundColor: "#18a8da",
-                  fill: true,
                 },
               ],
             }}
             options={{
               elements: {
                 point: {
-                  radius: 3,
-                },
-                line: {
-                  fill: true,
+                  radius: 1,
                 },
               },
-
+              scales: {
+                x: {
+                  grid: {
+                    drawOnChartArea: false,
+                    borderColor: "#fff",
+                    color: "#fff",
+                  },
+                },
+              },
               responsive: true,
               maintainAspectRatio: true,
+              plugins: {
+                tooltip: {
+                  backgroundColor: "#18a8da",
+                  borderWidth: 5,
+                  borderColor: "#fcfafa",
+                  padding: 15,
+                  bodyFont: {
+                    weight: "bold",
+                    family: "Times",
+                    size: 15,
+                  },
+                },
+              },
             }}
           />
         </div>
